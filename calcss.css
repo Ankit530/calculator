@@ -1,0 +1,61 @@
+h1
+{
+    color: blue;
+    font-size: 80px;
+    text-align: center;
+    text-shadow: 3px 4px orange;
+    text-decoration: underline;
+    animation: animate 1.5s linear infinite;
+}
+h2{
+    text-align: right;
+    text-decoration: underline;
+    padding-right: 30px;
+}
+@keyframes animate
+{
+    0%{
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 0.7;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
+td
+{
+    text-align: center;
+    width: 125px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+td:hover
+{
+    background-color: grey;
+}
+h2:hover
+{
+    color: coral;
+}
+td:active
+{
+    font-size: 26px;
+    font-weight: bolder;
+}
+#answer
+{
+    background-color: rosybrown;
+}
+#ans
+{
+    font-size: 50px;
+    text-align: right;
+}
+#switch
+{
+    font-size: 20px;
+}
