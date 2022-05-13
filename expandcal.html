@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <script type="text/javascript" src="expandcal.js"></script>
+        <link id="theme" rel="stylesheet" type="text/css" href="calcss.css">
+    </head>
+    <body>
+        <h1 id = "calculator">Calculator</h1> 
+        <br><br>
+        <h2><button id="switch" button onclick="Theme()">Dark Theme</button></h2>
+        <br>
+        <table border="2px" align = "center" width = 500px height = 100px>
+            <th><p id="ans"></p></th>
+        </table>
+        <table border="2px" align = "center" width = 500px height = 400px>
+    <!--    <tr>
+                <td>inv</td>
+                <td>deg</td>
+                <td>ln</td>
+                <td>(</td>
+                <td>)</td>
+            </tr>    -->
+            <tr>
+                <td type="button" onclick="special(1)">x<sup>y</sup></td>
+                <td type="button" onclick="special(2)">lg<sub style="font-size: 10px;">  10</sub></td>
+                <td type="button" onclick="special(3)">sin</td>
+                <td type="button" onclick="special(4)">cos</td>
+                <td type="button" onclick="special(5)">tan</td>
+            </tr>
+            <tr>
+                <td type="button" onclick="special(6)">X<sup style="font-size: 15px;">1/2</sup></td>
+                <td type="button" onclick="AC()">AC</td>
+                <td type="button" onclick="C()">C</td>
+                <td type="button" onclick="operation('%')">%</td>
+                <td type="button" onclick="operation('/')">/</td>
+            </tr>
+            <tr>
+                <td type="button" onclick="special(7)">X!</td>
+                <td type="button" onclick="num(7)">7</td>
+                <td type="button" onclick="num(8)">8</td>
+                <td type="button" onclick="num(9)">9</td>
+                <td type="button" onclick="operation('x')">X</td>
+            </tr>
+            <tr>
+                <td type="button" onclick="special(8)">1/x</td>
+                <td type="button" onclick="num(4)">4</td>
+                <td type="button" onclick="num(5)">5</td>
+                <td type="button" onclick="num(6)">6</td>
+                <td type="button" onclick="operation('-')">-</td>
+            </tr>
+            <tr>
+                <td type="button" onclick="special(9)">pi</td>
+                <td type="button" onclick="num(1)">1</td>
+                <td type="button" onclick="num(2)">2</td>
+                <td type="button" onclick="num(3)">3</td>
+                <td type="button" onclick="operation('+')">+</td>
+            </tr>
+            <tr>
+                <td><a href="main.html"><img src="4013332.png" height="25px" width="30px"></a></td>
+                <td type="button" onclick="special(0)">e</td>
+                <td type="button" onclick="num(0)">0</td>
+                <td type="button" onclick="operation('.')">.</td>
+                <td id="answer" type="button" onclick="operation('=')">=</td>
+            </tr>
+        </table>
+    </body>
+</html>
